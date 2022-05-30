@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tweet',
     'user',
-    # 'restaurant'
     'taggit.apps.TaggitAppConfig',
     'taggit_templatetags2',
 ]
