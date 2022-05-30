@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-kq3oo+i03a&ss#r&q83u_)7(^c^nr90*@67rfm%$lj@mdpz^k!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -55,12 +55,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'firstproject.urls'
-# TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\PC\Desktop\django\FirstProject\firstproject\firstproject\templates'],
-        # 'DIRS': [TEMPLATE_DIR],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
